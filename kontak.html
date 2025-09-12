@@ -44,9 +44,9 @@
       </iframe>
     </div>
 
-    <!-- Form Kontak -->
-    <h2>Form Kontak</h2>
-    <form class="kontak-form" action="mailto:email@dealerisuzu.com" method="post" enctype="text/plain">
+    <!-- Form Kontak (WhatsApp) -->
+    <h2>Form Kontak via WhatsApp</h2>
+    <form id="waForm" class="kontak-form">
       <label for="nama">Nama:</label>
       <input type="text" id="nama" name="nama" required>
 
@@ -59,11 +59,26 @@
       <label for="pesan">Pesan:</label>
       <textarea id="pesan" name="pesan" rows="4" required></textarea>
 
-      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      <button type="submit" class="btn btn-primary">Kirim via WhatsApp</button>
     </form>
   </main>
 
   <!-- WhatsApp Floating -->
   <script src="assets/js/wa-floating.js"></script>
+
+  <!-- Script untuk Form WhatsApp -->
+  <script>
+    document.getElementById("waForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      let nama = document.getElementById("nama").value;
+      let perusahaan = document.getElementById("perusahaan").value;
+      let telepon = document.getElementById("telepon").value;
+      let pesan = document.getElementById("pesan").value;
+
+      let text = `Halo Salman, saya ${nama} dari ${perusahaan || "-"}.\nNomor saya: ${telepon}.\nPesan: ${pesan}`;
+      let url = `https://wa.me/6285864966633?text=${encodeURIComponent(text)}`;
+      window.open(url, "_blank");
+    });
+  </script>
 </body>
 </html>
