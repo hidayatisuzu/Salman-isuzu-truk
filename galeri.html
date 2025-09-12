@@ -3,50 +3,79 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galeri Dealer Isuzu Jakarta</title>
+  <title>Galeri | Dealer Isuzu Jakarta</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
   <!-- Navbar -->
-  <header>
-    <nav>
-      <ul>
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="produk.html">Produk</a></li>
-        <li><a href="pricelist.html">Price List</a></li>
-        <li><a href="galeri.html" class="active">Galeri</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-      </ul>
-    </nav>
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo-isuzu.png" alt="Logo Dealer Isuzu Jakarta" loading="lazy">
+        <span>Dealer Isuzu Jakarta</span>
+      </a>
+      <nav class="main-nav" role="navigation" aria-label="Navigasi utama">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">☰</button>
+        <ul id="nav-list" class="nav-list">
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="pricelist.html">Price List</a></li>
+          <li><a href="galeri.html" class="active">Galeri</a></li>
+          <li><a href="testimoni.html">Testimoni</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+          <li><a href="about.html">Tentang Kami</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
+  <!-- Konten Galeri -->
   <main class="container">
     <h1>Galeri Dealer Isuzu Jakarta</h1>
-    <p>Kumpulan dokumentasi unit, serah terima, dan aktivitas dealer.</p>
+    <p>Kumpulan dokumentasi kegiatan, serah terima unit, dan aktivitas Dealer Isuzu Jakarta.</p>
 
-    <!-- Grid Galeri -->
-    <div class="galeri-grid">
-      <div class="galeri-item">
-        <img src="assets/img/galeri-1.jpg" alt="Serah terima unit Isuzu Traga">
-        <p>Serah terima Isuzu Traga</p>
-      </div>
-      <div class="galeri-item">
-        <img src="assets/img/galeri-2.jpg" alt="Display unit Isuzu Elf NLR">
-        <p>Display Isuzu Elf NLR</p>
-      </div>
-      <div class="galeri-item">
-        <img src="assets/img/galeri-3.jpg" alt="Isuzu Giga FVM untuk distribusi">
-        <p>Isuzu Giga FVM</p>
-      </div>
-      <div class="galeri-item">
-        <img src="assets/img/galeri-4.jpg" alt="Foto konsumen dengan unit Isuzu">
-        <p>Konsumen bersama unit Isuzu</p>
-      </div>
-      <!-- Tambahin lagi sesuai foto yang ada -->
+    <div class="card-grid">
+      <!-- Foto 1 -->
+      <article class="card">
+        <img src="assets/img/serah-terima-1.jpg" alt="Serah Terima Isuzu Traga" loading="lazy">
+        <h3>Serah Terima Isuzu Traga</h3>
+        <p>Pengiriman unit Traga untuk usaha distribusi lokal.</p>
+      </article>
+
+      <!-- Foto 2 -->
+      <article class="card">
+        <img src="assets/img/serah-terima-2.jpg" alt="Serah Terima Isuzu Elf" loading="lazy">
+        <h3>Serah Terima Isuzu Elf</h3>
+        <p>Pelanggan mempercayakan armada Isuzu Elf untuk bisnis transportasi.</p>
+      </article>
+
+      <!-- Foto 3 -->
+      <article class="card">
+        <img src="assets/img/serah-terima-3.jpg" alt="Serah Terima Isuzu Giga FVM" loading="lazy">
+        <h3>Serah Terima Isuzu Giga FVM</h3>
+        <p>Unit Giga FVM siap mendukung distribusi skala besar.</p>
+      </article>
+
+      <!-- Foto 4 -->
+      <article class="card">
+        <img src="assets/img/galeri-dealer.jpg" alt="Dealer Isuzu Jakarta" loading="lazy">
+        <h3>Dealer Isuzu Jakarta</h3>
+        <p>Fasilitas showroom dan layanan purna jual resmi Astra Isuzu.</p>
+      </article>
     </div>
   </main>
 
-  <!-- WhatsApp Floating -->
-  <script src="assets/js/wa-floating.js"></script>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Dealer Isuzu Jakarta — Sales Salman.</p>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="assets/js/wa-floating.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
