@@ -1,66 +1,69 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Testimoni Pelanggan - Dealer Isuzu Jakarta</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimoni Konsumen | Dealer Isuzu Jakarta</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="site-header">
+  <!-- Navbar -->
+  <header class="site-header" role="banner">
     <div class="container header-inner">
-      <a href="./" class="brand">
-        <img src="assets/img/logo-isuzu.png" alt="Logo Dealer Isuzu Jakarta">
+      <a href="index.html" class="brand">
+        <img src="assets/img/logo-isuzu.png" alt="Logo Dealer Isuzu Jakarta" loading="lazy">
         <span>Dealer Isuzu Jakarta</span>
       </a>
-      <nav class="navbar">
-        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
-        <ul>
+      <nav class="main-nav" role="navigation" aria-label="Navigasi utama">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list">Menu</button>
+        <ul id="nav-list" class="nav-list">
           <li><a href="index.html">Beranda</a></li>
           <li><a href="produk.html">Produk</a></li>
-          <li><a href="price-list.html">Price List</a></li>
+          <li><a href="pricelist.html">Price List</a></li>
           <li><a href="galeri.html">Galeri</a></li>
           <li><a href="testimoni.html" class="active">Testimoni</a></li>
           <li><a href="kontak.html">Kontak</a></li>
           <li><a href="about.html">Tentang Kami</a></li>
           <li><a href="faq.html">FAQ</a></li>
-          <li><a href="kebijakan-privasi.html">Privasi</a></li>
+          <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main class="container">
-    <h1>Testimoni Pelanggan</h1>
-    <p>Berikut beberapa pengalaman dari pelanggan Dealer Isuzu Jakarta.</p>
+    <h1>Testimoni Konsumen</h1>
+    <p>Beberapa pengalaman nyata dari konsumen yang sudah mempercayakan pembelian unit Isuzu kepada kami.</p>
 
     <div class="testimoni-grid">
-      <article class="card">
-        <img src="assets/img/serah-terima-1.jpg" alt="Serah terima unit 1">
-        <blockquote>
-          "Pelayanan ramah dan proses cepat. Terima kasih Pak Salman!"
-        </blockquote>
-        <p><strong>- Bapak Andi, Jakarta</strong></p>
-      </article>
+      <!-- Testimoni 1 -->
+      <div class="testimoni-card">
+        <p class="testimoni-text">"Prosesnya cepat, pelayanan ramah, dan unit dikirim sesuai jadwal. Terima kasih Sales Salman sudah membantu perusahaan kami."</p>
+        <p class="testimoni-nama">– Bapak Andi, Pembelian Isuzu Traga</p>
+      </div>
 
-      <article class="card">
-        <img src="assets/img/serah-terima-2.jpg" alt="Serah terima unit 2">
-        <blockquote>
-          "Unit sesuai kebutuhan usaha kami, sangat membantu operasional."
-        </blockquote>
-        <p><strong>- Ibu Rina, Bekasi</strong></p>
-      </article>
+      <!-- Testimoni 2 -->
+      <div class="testimoni-card">
+        <p class="testimoni-text">"Konsultasi karoseri sangat membantu. Unit NLR yang kami beli sudah langsung siap pakai sesuai kebutuhan bisnis."</p>
+        <p class="testimoni-nama">– Ibu Sari, Pembelian Isuzu NLR</p>
+      </div>
+
+      <!-- Testimoni 3 -->
+      <div class="testimoni-card">
+        <p class="testimoni-text">"Harga kompetitif dan pelayanan after-sales jelas. Sangat puas dengan unit Giga FVM yang kami gunakan untuk distribusi."</p>
+        <p class="testimoni-nama">– PT Logistik Jaya, Pembelian Isuzu FVM</p>
+      </div>
     </div>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Dealer Isuzu Jakarta — Sales Salman</p>
+      <p>&copy; <span id="year"></span> Dealer Isuzu Jakarta — Sales Salman.</p>
     </div>
   </footer>
 
   <!-- Script -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/wa-floating.js"></script>
+  <script src="assets/js/wa-floating.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
 </body>
 </html>
