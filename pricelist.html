@@ -7,9 +7,11 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <!-- Navbar -->
+  <!-- Header dengan Navbar -->
   <header>
-    <nav>
+    <div class="logo">Dealer Isuzu Jakarta</div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <nav id="navbar">
       <ul>
         <li><a href="index.html">Beranda</a></li>
         <li><a href="produk.html">Produk</a></li>
@@ -17,22 +19,20 @@
         <li><a href="galeri.html">Galeri</a></li>
         <li><a href="testimoni.html">Testimoni</a></li>
         <li><a href="kontak.html">Kontak</a></li>
-        <li><a href="about.html">Tentang Kami</a></li>
-        <li><a href="faq.html">FAQ</a></li>
-        <li><a href="kebijakan-privasi.html">Kebijakan Privasi</a></li>
       </ul>
     </nav>
   </header>
 
+  <!-- Konten Utama -->
   <main class="container">
-    <h1>Price List Isuzu Jakarta</h1>
+    <h1>Price List Resmi</h1>
     <p>Berikut adalah daftar harga resmi unit Isuzu terbaru. Klik tombol di bawah untuk membuka atau mengunduh file PDF.</p>
 
     <div class="testimoni-grid">
       <div class="testimoni-card">
-        <p class="testimoni-text">📄 Price List Resmi Isuzu Jakarta</p>
+        <p class="testimoni-text">📄 Price List Isuzu Jakarta (PDF)</p>
         <p class="testimoni-nama">
-          <a href="assets/pdf/pricelist.pdf" target="_blank" class="btn-primary">Buka / Unduh PDF</a>
+          <a href="assets/pdf/pricelist.pdf" target="_blank">➡️ Buka / Unduh PDF</a>
         </p>
       </div>
     </div>
@@ -40,5 +40,15 @@
 
   <!-- WhatsApp Floating -->
   <script src="assets/js/wa-floating.js"></script>
+
+  <!-- Script Navbar Hamburger -->
+  <script>
+    const menuToggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
+
+    menuToggle.addEventListener("click", () => {
+      navbar.classList.toggle("active");
+    });
+  </script>
 </body>
 </html>
